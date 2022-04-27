@@ -1,0 +1,105 @@
+@import './colors';
+
+.comicsBox{
+    background-color: #1c1c1c;
+    padding: 10px 0px;
+}
+
+#load{
+    justify-content: center;
+    padding: 15px 0px;
+    position: relative;
+}
+
+#load2{
+    justify-content: center;
+    padding: 15px 0px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.loadButton{
+  color: white;
+  background-color: $DcColor-active;
+  padding: 8px 55px;
+  border: none;
+}
+
+.serieButton{
+  color: white;
+  background-color: $DcColor-active;
+  padding: 8px 25px;
+  border: none;
+  position: absolute;
+  left: 0;
+  top: -33px;
+
+  h4{
+    font-size: 25px;
+    }
+}
+
+
+#points{
+    padding: 40px 0px;
+    align-items: center;
+    background-color: $DcColor-active;
+
+    .card{
+      width: calc(100%/5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .linkText{
+      font-size: 13px;
+      color: white;
+    }
+
+    .imgPoints{
+      width: 39px;
+    }
+
+    .card:nth-child(1) .imgPoints{
+      width: 32px;
+    }
+
+    .card:nth-child(4) .imgPoints{
+      width: 22px;
+    }
+
+}
+
+h2{
+    font-size: 22px;
+    color: white;
+}
+
+.comics{
+    width: calc(100% / 6);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: flex-start;
+}
+
+
+.imgCard{
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: top;
+}
+
+h6{
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 10px;
+}

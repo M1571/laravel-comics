@@ -14,5 +14,21 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+
+    $comic = config('comics');
+
+    return view('home', ['fumetti' => $comic]);
+})->name('home');
+
+Route::get('fumetti/{fumetti_id}', function ($fumetti_id) {
+
+    $comic = config('comics');
+
+    if (is_numeric($fumetti_id) && $fumetti_id >= 0 && $fumetti_id < count($comic)) {
+        $fumetto = $comic[$fumetti_id];
+        return view('fumetto', ['fumetto' => $fumetto]);
+    } else {
+        abort(404, 'Error');
+    }
+
+})->name('fumetti');

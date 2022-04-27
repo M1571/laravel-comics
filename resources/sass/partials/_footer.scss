@@ -1,0 +1,76 @@
+@import './_colors.scss';
+
+.footer #leftBox{
+  display: flex;
+  align-items:flex-start;
+  color: white;
+  gap: 35px;
+}
+
+.footer #list{
+  background-image: url("/img/footer-bg.1b706117.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#rightBox{
+  width: 550px;
+  height: 370px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.footer h4{
+  margin-top: 50px;
+}
+
+.footer .row{
+  margin-bottom: 50px;
+}
+
+.footer nav{
+  margin-top: 10px;
+}
+
+.footer ul{
+  display: flex;
+  flex-direction:column;
+}
+
+.footer a{
+  list-style: none;
+  color: gray;
+  font-size: 12px;
+  padding: 2px 0px;
+}
+
+#footer{
+  background-color: #303030;
+  padding: 20px 0px;
+}
+
+#bottonText{
+  color: white;
+  border: 3px solid $DcColor-active;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 6px 10px;
+}
+
+#socialText{
+  color: $DcColor-active;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+#socialBox{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.socialImg{
+  width: 30px;
+}

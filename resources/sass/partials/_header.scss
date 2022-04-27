@@ -1,0 +1,40 @@
+@import './_colors.scss';
+
+.header #logo{
+  width: 70px;
+}
+
+.header nav{
+    width: 100%;
+}
+
+.header ul{
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  width: 100%;
+}
+
+.header .listItems{
+  width: calc(100% / 11);
+  list-style: none;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 50px 0px;
+  text-align: center;
+  text-decoration: none;
+
+  &:hover, &:active{
+    border-bottom: 5px solid $DcColor-active;
+    color: $DcColor-active;
+  }
+}
+
+.attiva{
+    border-bottom: 5px solid rgba(12, 124, 236, 1);
+    color: rgba(12, 124, 236, 1);
+}
+
+.disattiva{
+    border-bottom: 5px solid rgba(12, 124, 236, 0);
+}
